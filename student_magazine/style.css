@@ -1,0 +1,74 @@
+/*
+--------------------
+        Logo
+--------------------
+*/
+
+/* logo design */
+.logo {
+   color:141414;                                                /* text colour */
+   font-size: clamp(32px, 5vw, 48px);                           /* resize for screen size */
+   margin: 0%;                                                  /* reset placement*/
+}
+
+
+/* top hero image */
+.hero {
+    background-image: var(--hero-image);                        /* only hero uses the image */
+    background-repeat: no-repeat;                               /* stop image repeating */
+    background-size: cover;                                     /* image covers whole screen width */
+    height: 100vh;                                              /* height of viewport */
+    background-position: center;                                /* aligns hero image center of screen */
+}
+
+/* hero image background */
+:root {
+    --hero-image: url(images/dark_mode_background.png);         /* dark mode hero image */
+    --hero-image: url(images/light_mode_background.png);        /* light mode hero image */
+}
+
+/* header container */
+header {
+    display: flex;                                              /* aligns header elements into horizontal row */
+    justify-content: space-between;                             /* spacing between header elements */
+    align-items: center;                                        /* aligns header elements centered */
+    padding: 1.5vw;                                             /* top header padding */
+    padding-left: 5vw;                                          /* left header padding */
+    padding-right: 5vw;                                         /* right header padding */
+}
+
+/*
+----------------------
+    Navigation Bar
+----------------------
+*/
+
+.navbar {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* navigation bar hyperlinks */
+.navbar a {
+    color: #141414;                                         /* button colour */
+    font-weight: bold;                                        /* button font weight */
+    font-size: clamp(16px, 5vw, 32px);                        /* button font size */
+}
+
+
+li a { 
+    text-decoration: none;                                    /* removes hyperlink underline */
+}
+
+/* navigation bar hyperlink lists */
+ul {
+    list-style: none;                                         /* removes list styles */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* button hover */
+nav li a:hover {
+    color: orange;                                          /* button hover colour */
+}
