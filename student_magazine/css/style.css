@@ -6,7 +6,6 @@
 
 /* logo design */
 .logo {
-   color:141414;                                                /* text colour */
    font-size: clamp(32px, 5vw, 48px);                           /* resize for screen size */
    margin: 0%;                                                  /* reset placement*/
 }
@@ -17,14 +16,13 @@
     background-image: var(--hero-image);                        /* only hero uses the image */
     background-repeat: no-repeat;                               /* stop image repeating */
     background-size: cover;                                     /* image covers whole screen width */
-    height: 100vh;                                              /* height of viewport */
+    min-height: 100vh;                                              /* height of viewport */
     background-position: center;                                /* aligns hero image center of screen */
 }
 
 /* hero image background */
 :root {
-    --hero-image: url(images/dark_mode_background.png);         /* dark mode hero image */
-    --hero-image: url(images/light_mode_background.png);        /* light mode hero image */
+    --hero-image: url("../images/light_mode_background.png");   /* light mode hero image */
 }
 
 /* header container */

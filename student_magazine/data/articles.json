@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "title": "Money matters but you don’t have to navigate it on your own.",
+        "author": "Thomas Jeffrey",
+        "date": "2026-02-01",
+        "sections": [
+            {
+                "type": "heading",
+                "text": "SUPPORT"
+            },
+            {
+                "type": "image",
+                "src": "../student_magazine/images/finanical_support_banner.png"
+            },
+            {
+                "type": "paragraph",
+                "text": "Money can be one of the trickiest parts of student life. It’s there in the everyday decisions, paying rent, budgeting for food, deciding whether to work extra hours or focus on assignments. Sometimes it feels manageable, and other times it can feel overwhelming. If that sounds familiar, you’re definitely not alone. That’s where Catalyst support teams come in."
+            },
+                        {
+                "type": "subheading",
+                "text": "1. Uncertainty with financial management"
+            },
+            {
+                "type": "paragraph",
+                "text": "Whether you’re unsure where to start, dealing with unexpected financial pressure, or just want to feel more confident about managing your money, the Student Support team is there to help. They offer a mix of in-person and virtual appointments, so you can choose what works best for you and your schedule."
+            },
+            {
+                "type": "image",
+                "src": "../student_magazine/images/financial_support_uncertainty_with_financial_management.png"
+            },
+            {
+                "type": "paragraph",
+                "text": "Support doesn’t have to be formal or intimidating. It can be a conversation, sitting down with someone who understands student life and can help you make sense of your options. "
+            },
+            {
+                "type": "subheading",
+                "text": "Financial guidance support"
+            },
+            {
+                "type": "paragraph",
+                "text": "From practical financial guidance to signposting useful resources, the team is there to help you take the next step, whatever that looks like for you. If you’ve already had an initial appointment, arranging further support is simple. You can emailStudentSupportTeam@edgehill.ac.uk to book a follow-up appointment and continue the conversation when you need it."
+            },
+            {
+                "type": "image",
+                "src": "../student_magazine/images/financial_support_financial_guidance_support.png"
+            },
+            {
+                "type": "paragraph",
+                "text": "Money matters but you don’t have to navigate it on your own. With the right support, clear advice, and people who genuinely want to help, things can feel more manageable. Wherever you’re starting from, Catalyst and the Student Support team are here to support you every step of the way."
+            }
+        ]
+    }
+]
