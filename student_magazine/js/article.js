@@ -1,15 +1,27 @@
 /*
 ----------------------
+Read URL ID
+----------------------
+*/
+
+const paramater = new URLSearchParams(window.location.search);                  // read id from url
+const articleId = paramater.get("id");                                          // extract id value from search
+
+/*
+----------------------
 Retrieve Article File
 ----------------------
 */
 
 fetch("../student_magazine/data/articles.json")
-.then(response => response.json())      // converts json to js
+.then(response => response.json())                                              // converts json to js
 .then(articles => {
-    const article = articles[0];                                                // retrieves first article
+    let article = articles.find(a => a.id == articleId);                        // loops through articles so article id matches
+    if(!article){
+        article = articles[0];                                                  // if no matches found, shows first article
+    }
 
-    document.querySelector("#article-title").textContent = article.title;     // returns first matching element for 'article-content'
+    document.querySelector("#article-title").textContent = article.title;       // returns first matching element for 'article-content'
     document.querySelector("#article-author").textContent = article.author;     // returns first matching element for 'article-author'
     
     const contentSection = document.querySelector("#article-content");          // returns first matching element for 'article-content'

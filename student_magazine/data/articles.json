@@ -50,5 +50,18 @@
                 "text": "Money matters but you don’t have to navigate it on your own. With the right support, clear advice, and people who genuinely want to help, things can feel more manageable. Wherever you’re starting from, Catalyst and the Student Support team are here to support you every step of the way."
             }
         ]
+    },
+    {
+        "id": 2,
+        "title": "Second Article",
+        "author": "Jane Doe",
+        "date": "2026-02-02",
+        "sections": 
+        [
+            {
+            "type": "paragraph",
+            "text": "This is article two."
+            }
+        ]
     }
 ]
