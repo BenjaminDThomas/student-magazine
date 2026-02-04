@@ -28,7 +28,7 @@ fetch("../student_magazine/data/articles.json")
     article.sections.forEach(section => {
         if(section.type === "paragraph") {                                      // checks each stored article if the section has the type 'paragraph'
             const p = document.createElement("p");                              // creates paragraph
-            p.textContent = section.text;                                        
+            p.innerHTML = section.text;                                         // lets html link tags work from json
             contentSection.appendChild(p);                                      // appends content to paragraph
         }
         if(section.type === "heading") {                                        // checks each stored article if the section has the type 'heading'
