@@ -10,12 +10,36 @@
     <link rel="stylesheet" href="css/grid.css">
 </head>
 <body>
-    <!-- Article Header -->
-    <h1 id="article-title"></h1>
-    <!-- Article Author -->
-    <p id="article-author"></p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Article Header Container -->
+    <article class="article-header-wrap">
+        <!-- Top Page Divider -->
+        <hr class="header-line top">
+        <!-- Header -->
+        <header class="article-header">
+            <hgroup class="header-left">
+                <!-- Article Title -->
+                <h1 id="article-title"></h1>
+                <!-- Article Author -->
+                <p id="article-author"></p>
+            </hgroup>
+            <!-- Return Button -->
+            <a class="return-btn" href="viewall.html">Return →</a>
+        </header>
+        <!-- Bottom Page Divider-->
+        <hr class="header-line bottom">
+    </article>
     <!-- Article Content -->
     <section id="article-content"></section>
+    <hr class="header-line bottom article-bottom-line">
     <!-- JavaScript File-->
     <script src="js/article.js"></script>
 </body>

@@ -1,6 +1,17 @@
+/*
+--------------------
+Page Alignment
+--------------------
+*/
+
 /* resets margins for whole page */
-body {
-    margin: 0;
+html, body {
+    margin: 0 auto;
     padding: 0; 
+    width: 100%;                                    /* 100% of page width for content */
+    max-width: 100%;                                /* content cannot exceed 100% of screen */
     box-sizing: border-box;
+    overflow-x: hidden;                             /* stops horizontal overflow */
 }
+
+* { box-sizing: border-box; }                       /* stops padding making elements wider than cotnainer */
