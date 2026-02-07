@@ -26,7 +26,7 @@ Scroll To Top Button
   position: fixed;                                          /* fixed button element on screen */
   right: 24px;                                              /* spacing to the right of button */
   bottom: 24px;                                             /* spacing below button */
-  z-index: 99;                                              /* priortisies button over background content */
+  z-index: 200;                                             /* priortisies button over background content */
   padding: 10px 14px;                                       /* button padding */
   border-radius: 100px;                                     /* curved button edges */                              
   border: 3px solid rgba(0, 0, 0, 0.35);                  /* button border */
@@ -41,3 +41,34 @@ Scroll To Top Button
   border-color: orange;                                   /* button hover color */
   transform: translateY(-2px);                              /* pushes button up animation on hover */
 }
+
+/*
+--------------------
+Bottom Screen Blur
+--------------------
+*/
+
+.bottom-blur {
+  position: fixed;                                          /* positions remains same on whole page */
+  left: 0;                                                  /* positioning left */
+  right: 0;                                                 /* positioning right */
+  bottom: 0;                                                /* positioning bottom */
+  height: 280px;                                            /* blur height */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%); /* gradient blur */
+  backdrop-filter: blur(12px);                              /* blur radius */                      
+  -webkit-backdrop-filter: blur(12px);                      /* blurs content behind the element */
+  pointer-events: none;                                     /* stops content being interacted with behind the blur element */
+  z-index: 100;                                             /* positions the blur over all other content */
+  /* progressive blur effect */
+  mask-image: linear-gradient(to top,
+    black 0%,
+    black 15%,                                                          
+    rgba(0, 0, 0, 0.85) 35%,
+    rgba(0, 0, 0, 0.6) 55%,
+    rgba(0, 0, 0, 0.3) 75%,
+    rgba(0, 0, 0, 0.1) 88%,
+    rgba(0, 0, 0, 0.03) 95%,
+    transparent 100%
+  );
+}
+
