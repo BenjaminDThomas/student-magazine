@@ -160,7 +160,7 @@ Article Cotnent
 
 #article-content p {
     line-height: 1.7;
-    font-size: 16px;                                              /* paragraph font size */
+    font-size: 22px;                                              /* paragraph font size */
     margin: 0 0 18px;
     max-width: 70ch;                                              /* text line length */
 }
@@ -182,7 +182,7 @@ Article Cotnent
 /* subheadings */
 #article-content h3 {
     position: relative;
-    margin: 28px 0 14px;                                          /* subheading alignment */
+    margin: 50px 0 14px;                                          /* subheading alignment */
     padding-bottom: 20px;                                         /* spacing below subheader */
 }
 
@@ -417,5 +417,9 @@ Mobile Layout
 
   .overlay {
     border-radius: 25px;                                                /* overlay edges over article image */
+  }
+
+  #article-content p {
+    font-size: 16px;                                                    /* resizes paragraph font size */
   }
 }

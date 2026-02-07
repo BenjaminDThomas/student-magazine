@@ -8,10 +8,36 @@ Page Alignment
 html, body {
     margin: 0 auto;
     padding: 0; 
-    width: 100%;                                    /* 100% of page width for content */
-    max-width: 100%;                                /* content cannot exceed 100% of screen */
+    width: 100%;                                            /* 100% of page width for content */
+    max-width: 100%;                                        /* content cannot exceed 100% of screen */
     box-sizing: border-box;
-    overflow-x: hidden;                             /* stops horizontal overflow */
+    overflow-x: hidden;                                     /* stops horizontal overflow */
 }
 
-* { box-sizing: border-box; }                       /* stops padding making elements wider than cotnainer */
+* { box-sizing: border-box; }                               /* stops padding making elements wider than cotnainer */
+
+/*
+--------------------
+Scroll To Top Button
+--------------------
+*/
+
+#scrollTopBtn{
+  position: fixed;                                          /* fixed button element on screen */
+  right: 24px;                                              /* spacing to the right of button */
+  bottom: 24px;                                             /* spacing below button */
+  z-index: 99;                                              /* priortisies button over background content */
+  padding: 10px 14px;                                       /* button padding */
+  border-radius: 100px;                                     /* curved button edges */                              
+  border: 3px solid rgba(0, 0, 0, 0.35);                  /* button border */
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(10px);                              /* blurs content behind button */
+  cursor: pointer;                                          /* cursor state interaction change */
+  transition: border-color .25s ease, transform .25s ease;  /* smoothly animates border-color change easing in */
+  display: none;                                            /* hidden until scrolled below top section */
+}
+
+#scrollTopBtn:hover{
+  border-color: orange;                                   /* button hover color */
+  transform: translateY(-2px);                              /* pushes button up animation on hover */
+}
