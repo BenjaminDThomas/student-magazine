@@ -26,6 +26,8 @@ fetch("../student_magazine/data/articles.json")
     
     const contentSection = document.querySelector("#article-content");          // returns first matching element for 'article-content'
     contentSection.innerHTML = "";
+
+    
     let imageCount = 0;
     
     for (let i = 0; i < article.sections.length; i++) {                         // for loop to go through the amount of sections stored
